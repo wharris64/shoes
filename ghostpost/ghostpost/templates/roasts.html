@@ -1,0 +1,7 @@
+<h1>Roasts</h1>
+{% for i in data %}
+        <li>{{ i.content }}</li> <li>{{ i.posttime }}</li>        
+       <a href="/upvote/{{ i.id }}/" ><button>upvote:{{ i.upvotes }}</button></a> 
+        
+        <a href="/downvote/{{ i.id }}/" ><button>downvote:{{ i.downvotes }}</button></a>
+    {% endfor %}

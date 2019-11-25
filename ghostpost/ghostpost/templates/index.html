@@ -1,0 +1,12 @@
+<h1> Ghosties' Posties </h1>
+<li><a href = "roastboastadd/"><button>Make a Post</button></a></li>
+<li><a href = "boasts/"> <button>Boasts</button> </a></li>
+<li><a href = "roasts/"> <button>Roasts</button> </a></li>
+<li><a href = "popular/"> <button>Popular Posts</Button> </a></li>
+{% for i in data %}
+        <li>{{ i.content }}</li> <li>{{ i.posttime }}</li> 
+        <a href="/upvote/{{ i.id }}/" ><button>upvote:{{ i.upvotes }}</button></a> 
+        
+        <a href="/downvote/{{ i.id }}/" ><button>downvote:{{ i.downvotes }}</button></a>      
+{% endfor %}
+ </ul>
