@@ -19,6 +19,10 @@ from shoes.quickstart import models, views
 from rest_framework import routers
 router = routers.DefaultRouter()
 router.register(r'shoe', views.ShoeViewSet)
+router.register(r'shoe_type', views.ShoeTypeViewSet)
+router.register(r'shoe_color', views.ShoeColorViewSet)
+router.register(r'manufacturer', views.ManufacturerViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
