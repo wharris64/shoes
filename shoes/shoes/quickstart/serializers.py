@@ -21,13 +21,4 @@ class ShoeColorSerializer(serializers.HyperlinkedModelSerializer):
 class ShoeSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = models.Shoe
-        fields = ['size','manufacturer', 'brand','color', 'material','shoe_type', ]
-
-
-
-
-
-class GroupSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Group
-        fields = ['color_name'] 
+        fields = ['size','manufacturer', 'brand','color', 'material','shoe_type', 'fasten_type' ]

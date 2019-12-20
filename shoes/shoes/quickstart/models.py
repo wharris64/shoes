@@ -4,7 +4,7 @@ from django.db import models
 # Create your models here.
 class Manufacturer(models.Model):
     name = models.CharField(max_length = 50)
-    website =models.URLField(max_length=200, default = True)
+    website =models.URLField(max_length=200)
 
 
 class ShoeType(models.Model):
@@ -14,7 +14,7 @@ class ShoeColor(models.Model):
     color_name = models.CharField(max_length = 50)
 
 class Shoe(models.Model):
-    size = models.IntegerField
+    size = models.IntegerField()
     brand = models.CharField(max_length = 50)
     manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
     color = models.ForeignKey(ShoeColor, on_delete=models.CASCADE)
