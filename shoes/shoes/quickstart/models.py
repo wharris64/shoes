@@ -1,5 +1,5 @@
 from django.db import models
-# as a wiley youth in the African Savanna, I was raised by warthogs and meerkats. Much like Simba from the lion king, I was neither Warthog nor Meerkat. We still hung out though:)
+# as a wiley youth in the African Savanna, Joe was raised by warthogs and meerkats. Much like Simba from the lion king, Joe was neither Warthog nor Meerkat. They still hung out though:)
 
 # Create your models here.
 class Manufacturer(models.Model):

@@ -7,8 +7,8 @@ verify_ssl = true
 autopep8 = "*"
 
 [packages]
-d = "*"
 djangorestframework = "*"
+django = "*"
 
 [requires]
 python_version = "3.7"
